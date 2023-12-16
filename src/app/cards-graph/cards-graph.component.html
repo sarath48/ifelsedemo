@@ -1,0 +1,11 @@
+<div>
+  <div *ngFor="let static of moneyStatics">
+    <h2>{{ static.key }}</h2>
+    <p>{{ static.value }}</p>
+    <p>{{ static.trend }}</p>
+  </div>
+
+  <div>
+    <canvas id="MyChart">{{ chart }}</canvas>
+  </div>
+</div>

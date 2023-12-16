@@ -1,0 +1,29 @@
+.overview {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-radius: 15px;
+  padding: 0 15px;
+}
+
+h1 {
+  color: rgb(23, 34, 83);
+}
+
+input {
+  border: 1px solid grey;
+  border-radius: 9px;
+  padding: 8px;
+  width: 350px;
+  background-color: rgba(128, 128, 128, 0.1);
+}
+
+.fa-envelope,
+.fa-bell {
+  padding: 7px;
+  border: 1px solid rgba(128, 128, 128, 0.366);
+  border-radius: 5px;
+  margin-right: 5px;
+}

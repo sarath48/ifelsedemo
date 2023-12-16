@@ -1,0 +1,90 @@
+.side-nav {
+  padding: 35px 25px;
+  width: fit-content;
+}
+
+.bank-landmark {
+  display: flex;
+  justify-content: space-between;
+  font-size: large;
+  font-weight: 700;
+  color: rgb(23, 34, 83);
+}
+
+.bank-icon i {
+  font-size: small;
+}
+
+.profile {
+  display: flex;
+  justify-content: space-between;
+  padding: 35px 0 15px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: 5px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+  color: rgb(23, 34, 83);
+}
+
+.up-down {
+  display: flex;
+  flex-direction: column;
+
+  font-size: xx-small;
+}
+
+.menu-list {
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+}
+
+.menu {
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: gray;
+}
+
+.menu-list-options {
+  list-style-type: none;
+  font-size: medium;
+  font-weight: 400;
+  color: grey;
+}
+
+.menu-list-options li {
+  margin-bottom: 10px;
+  margin-left: -35px;
+}
+
+.menu-list-options li i {
+  margin-right: 15px;
+}
+
+.fa-toggle-off {
+  margin-left: 15px;
+  font-size: 20px;
+}
+
+.payment {
+  border: 2px dashed rgba(128, 128, 128, 0.344);
+  margin-top: 15px;
+  padding-top: 35px;
+  padding-bottom: 20px;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.payment i {
+  background-color: rgb(23, 34, 83);
+  color: white;
+  padding: 15px;
+  border-radius: 35px;
+  outline: gray dashed 2px;
+  outline-offset: 3px;
+}
+
+.payment p {
+  color: rgb(23, 34, 83);
+  font-weight: bold;
+}

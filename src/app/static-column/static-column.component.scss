@@ -1,0 +1,121 @@
+.static-column {
+  background-color: white;
+  border-radius: 15px;
+  padding: 15px;
+  margin-top: 5px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cards p {
+  color: rgb(23, 34, 83);
+  font-weight: bolder;
+  font-size: large;
+}
+
+.decrease {
+  font-size: small;
+  font-weight: 100;
+  color: gray;
+}
+
+.fa-angle-left,
+.fa-angle-right {
+  padding: 7px;
+  border: 1px solid rgba(128, 128, 128, 0.266);
+  margin-right: 5px;
+  border-radius: 8px;
+  font-size: small;
+}
+
+img {
+  width: 350px;
+}
+
+.new-card {
+  border: 2px dashed rgba(128, 128, 128, 0.286);
+  padding-top: 15px;
+  margin-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.new-card i,
+.plan i {
+  background-color: rgb(23, 34, 83);
+  color: white;
+  padding: 5px;
+  border-radius: 35px;
+  font-size: small;
+}
+
+.new-card span {
+  color: rgb(23, 34, 83);
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.menu-list {
+  padding: 15px 0 7px 0;
+  margin-top: 15px;
+
+  border-top: 1px solid rgba(128, 128, 128, 0.3);
+}
+
+.menu {
+  font-size: large;
+  font-weight: 700;
+  color: rgb(23, 34, 83);
+}
+
+.menu-list-options {
+  list-style-type: none;
+  font-size: medium;
+  font-weight: 400;
+  color: grey;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  border: 1px solid rgba(128, 128, 128, 0.314);
+  border-radius: 15px;
+}
+
+.menu-list-options li {
+  margin-left: -35px;
+  text-align: center;
+  margin-top: 14px;
+  margin-bottom: 14px;
+  padding-right: 15px;
+  border-right: 1px solid rgba(128, 128, 128, 0.292);
+}
+
+.menu-list-options li:last-child {
+  border-right: none;
+  padding-right: 0;
+}
+
+.menu-list-options li p {
+  margin-top: 4px;
+}
+
+// .menu-list-options li i {
+//   margin-right: 15px;
+// }
+
+.plan {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(128, 128, 128, 0.3);
+  color: rgb(23, 34, 83);
+  font-weight: 700;
+  font-size: large;
+}
