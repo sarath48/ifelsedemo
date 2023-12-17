@@ -1,6 +1,7 @@
 .side-nav {
   padding: 35px 25px;
-  width: fit-content;
+  flex-grow: 1;
+  position: fixed;
 }
 
 .bank-landmark {
@@ -35,6 +36,7 @@
 
 .menu-list {
   padding: 15px 0;
+  width: 170px;
   border-bottom: 1px solid rgba(128, 128, 128, 0.3);
 }
 

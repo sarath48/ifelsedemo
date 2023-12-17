@@ -35,31 +35,88 @@ export class CardsGraphComponent implements OnInit {
       data: {
         // values on X-Axis
         labels: [
-          '2022-05-10',
-          '2022-05-11',
-          '2022-05-12',
-          '2022-05-13',
-          '2022-05-14',
-          '2022-05-15',
-          '2022-05-16',
-          '2022-05-17',
+          'Jan',
+          'Feb',
+          'Mar',
+          'Apr',
+          'May',
+          'Jun',
+          'Jul',
+          'Aug',
+          'Sep',
+          'Oct',
+          'Nov',
+          'Dec',
         ],
         datasets: [
           {
-            label: 'Sales',
-            data: ['467', '576', '572', '79', '92', '574', '573', '576'],
-            backgroundColor: 'blue',
+            label: 'Income',
+            data: [
+              '467',
+              '576',
+              '572',
+              '79',
+              '92',
+              '574',
+              '573',
+              '576',
+              '572',
+              '79',
+              '92',
+              '443',
+            ],
           },
           {
-            label: 'Profit',
-            data: ['542', '542', '536', '327', '17', '0.00', '538', '541'],
-            backgroundColor: 'limegreen',
+            label: 'Investment',
+            data: [
+              '542',
+              '542',
+              '536',
+              '327',
+              '17',
+              '0.00',
+              '538',
+              '541',
+              '536',
+              '327',
+              '17',
+              '32',
+            ],
+          },
+
+          {
+            label: 'Expense',
+            data: [
+              '542',
+              '542',
+              '536',
+              '327',
+              '17',
+              '0.00',
+              '538',
+              '541',
+              '536',
+              '327',
+              '17',
+              '345',
+            ],
           },
         ],
       },
+
       options: {
         aspectRatio: 2.5,
       },
     });
+  }
+
+  determineColor(trend: number): string {
+    if (trend === 32) {
+      return 'green';
+    } else if (trend === 12) {
+      return 'orange';
+    } else {
+      return 'yellow';
+    }
   }
 }

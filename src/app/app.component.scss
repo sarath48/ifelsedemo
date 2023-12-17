@@ -36,8 +36,13 @@
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  margin-left: 225px;
 }
 
 .static-balance {
   display: flex;
+}
+
+.card-graph {
+  flex-grow: 1;
 }

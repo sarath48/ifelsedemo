@@ -1,1 +1,84 @@
-<p>transaction-history works!</p>
+<div class="transaction-history">
+  <div class="header">
+    <h2>Transaction History</h2>
+    <div class="header-actions">
+      <div class="action">Search</div>
+      <div class="action">Filter</div>
+      <div class="action">Export</div>
+    </div>
+  </div>
+
+  <table>
+    <tr class="tr-header">
+      <th>
+        <div class="table-header">
+          <p>Date</p>
+          <div class="up-down up-down-date">
+            <div><i class="fa-solid fa-angle-up"></i></div>
+            <div><i class="fa-solid fa-angle-down"></i></div>
+          </div>
+        </div>
+      </th>
+      <th>
+        <div class="table-header">
+          <p>Name</p>
+          <div class="up-down up-down-name">
+            <div><i class="fa-solid fa-angle-up"></i></div>
+            <div><i class="fa-solid fa-angle-down"></i></div>
+          </div>
+        </div>
+      </th>
+      <th>
+        <div class="table-header">
+          <p>Status</p>
+          <div class="up-down up-down-status">
+            <div><i class="fa-solid fa-angle-up"></i></div>
+            <div><i class="fa-solid fa-angle-down"></i></div>
+          </div>
+        </div>
+      </th>
+      <th>
+        <div class="table-header">
+          <p>Type</p>
+          <div class="up-down up-down-type">
+            <div><i class="fa-solid fa-angle-up"></i></div>
+            <div><i class="fa-solid fa-angle-down"></i></div>
+          </div>
+        </div>
+      </th>
+      <th>
+        <div class="table-header">
+          <p>Time</p>
+          <div class="up-down up-down-time">
+            <div><i class="fa-solid fa-angle-up"></i></div>
+            <div><i class="fa-solid fa-angle-down"></i></div>
+          </div>
+        </div>
+      </th>
+      <th>
+        <div class="table-header">
+          <p>Amount</p>
+          <div class="up-down up-down-amount">
+            <div><i class="fa-solid fa-angle-up"></i></div>
+            <div><i class="fa-solid fa-angle-down"></i></div>
+          </div>
+        </div>
+      </th>
+      <th>Action</th>
+    </tr>
+    <tr *ngFor="let transaction of transaction_history">
+      <td class="transaction-date">{{ transaction.date }}</td>
+      <td class="transaction-name">{{ transaction.name }}</td>
+      <td
+        class="transaction-status"
+        [ngClass]="determineStatus(transaction.status)"
+      >
+        {{ transaction.status }}
+      </td>
+      <td class="transaction-type">{{ transaction.type }}</td>
+      <td class="transaction-time">{{ transaction.time }}</td>
+      <td class="transaction-amount">${{ transaction.amount }}</td>
+      <td class="actions">...</td>
+    </tr>
+  </table>
+</div>

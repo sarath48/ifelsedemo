@@ -6,18 +6,30 @@
   background-color: white;
   border-radius: 15px;
   padding: 0 15px;
+  margin-right: 15px;
 }
 
 h1 {
   color: rgb(23, 34, 83);
 }
 
-input {
+p {
   border: 1px solid grey;
   border-radius: 9px;
   padding: 8px;
-  width: 350px;
+  width: 390px;
   background-color: rgba(128, 128, 128, 0.1);
+}
+
+p .fa-search {
+  font-size: large;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+.search-text {
+  display: inline-block;
+  text-align: start;
 }
 
 .fa-envelope,

@@ -1,8 +1,28 @@
-<div>
-  <div *ngFor="let static of moneyStatics">
-    <h2>{{ static.key }}</h2>
-    <p>{{ static.value }}</p>
-    <p>{{ static.trend }}</p>
+<div class="cards-graph">
+  <div class="moneystatics-more">
+    <h2>Money Statistics</h2>
+    <div class="monthly-more">
+      <p class="monthly">
+        <span>Monthly</span><i class="fa-solid fa-angle-down"></i>
+      </p>
+      <p class="more">...</p>
+    </div>
+  </div>
+  <div class="static-trends">
+    <div *ngFor="let static of moneyStatics">
+      <h2 class="title">{{ static.key.split("_").join(" ") | titlecase }}</h2>
+      <p class="balance">{{ static.value | currency }}</p>
+      <p>
+        <i
+          class="fa-solid fa-arrow-trend-up"
+          [ngClass]="determineColor(static.trend)"
+        ></i
+        ><span class="trend-percent" [ngClass]="determineColor(static.trend)"
+          ><span class="plus-icon">+</span>{{ static.trend }}%</span
+        >
+        from last month
+      </p>
+    </div>
   </div>
 
   <div>

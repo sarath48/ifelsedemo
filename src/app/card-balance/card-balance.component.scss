@@ -1,0 +1,54 @@
+.card-balance {
+  padding: 15px;
+
+  border-radius: 15px;
+  margin: 5px 15px 5px 5px;
+  background-color: white;
+}
+
+.plan-target-progress {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: -15px;
+}
+
+progress {
+  margin-top: 15px;
+  width: 100%;
+  accent-color: rgb(23, 34, 83);
+}
+
+.plan-target-progress p:first-child,
+.apply-gray {
+  color: rgba(128, 128, 128, 0.452);
+}
+
+.plan-target-progress p:last-child {
+  color: rgb(23, 34, 83);
+  font-weight: 900;
+}
+
+.apply-gray {
+  color: rgba(128, 128, 128, 0.452);
+}
+
+.balance-more {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.balance-more p {
+  font-size: 25px;
+  color: gray;
+}
+
+.balance {
+  color: rgb(23, 34, 83);
+  font-size: 30px;
+  font-weight: 900;
+  margin-top: -10px;
+  margin-bottom: -1px;
+}

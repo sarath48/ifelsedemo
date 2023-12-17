@@ -1,5 +1,26 @@
-<div>
-  <h2>Total Balance</h2>
-  {{ balance }}
+<div class="card-balance">
+  <div class="balance-more">
+    <h2>Total Balance</h2>
+    <p>...</p>
+  </div>
+
+  <p class="balance">{{ balance?.total_balance | currency }}</p>
   <!-- porgress meter -->
+  <div class="plan-progress">
+    <progress
+      id="file"
+      value="{{ balance?.payment_done_percentage }}"
+      max="100"
+    >
+      50%
+    </progress>
+    <div class="plan-target-progress">
+      <p>Monthly payment limit</p>
+      <p>
+        ${{ balance?.payment_done_so_far }}/<span class="apply-gray"
+          >${{ balance?.monthly_payment_limit }}</span
+        >
+      </p>
+    </div>
+  </div>
 </div>

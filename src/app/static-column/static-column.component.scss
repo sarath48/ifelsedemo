@@ -1,7 +1,7 @@
 .static-column {
   background-color: white;
   border-radius: 15px;
-  padding: 15px;
+  padding: 15px 10px 15px 29px;
   margin-top: 5px;
 }
 
@@ -10,6 +10,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  width: 320px;
 }
 
 .cards p {
@@ -35,6 +36,7 @@
 
 img {
   width: 350px;
+  margin-left: -20px;
 }
 
 .new-card {
@@ -44,6 +46,7 @@ img {
   padding-bottom: 15px;
   text-align: center;
   border-radius: 15px;
+  width: 310px;
 }
 
 .new-card i,
@@ -64,7 +67,7 @@ img {
 .menu-list {
   padding: 15px 0 7px 0;
   margin-top: 15px;
-
+  width: 310px;
   border-top: 1px solid rgba(128, 128, 128, 0.3);
 }
 
@@ -91,14 +94,20 @@ img {
   margin-left: -35px;
   text-align: center;
   margin-top: 14px;
-  margin-bottom: 14px;
-  padding-right: 15px;
+  margin-bottom: 10px;
+  padding-right: 35px;
   border-right: 1px solid rgba(128, 128, 128, 0.292);
 }
 
 .menu-list-options li:last-child {
   border-right: none;
   padding-right: 0;
+  padding-left: 15px;
+}
+
+.menu-list-options li:nth-child(2) {
+  padding-left: 35px;
+  padding-right: 25px;
 }
 
 .menu-list-options li p {
@@ -118,4 +127,71 @@ img {
   color: rgb(23, 34, 83);
   font-weight: 700;
   font-size: large;
+  width: 310px;
+}
+
+.plan-scheme {
+  display: flex;
+  flex-direction: column;
+
+  width: 310px;
+  border: 1px solid rgba(128, 128, 128, 0.212);
+  border-radius: 15px;
+  padding: 2px 15px 15px 15px;
+  margin-bottom: 15px;
+}
+
+.plan-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.plan-name {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.plan-icon {
+  padding: 5px;
+  border: 1px solid rgba(128, 128, 128, 0.2);
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.plan-summary p:first-child {
+  margin-bottom: -12px;
+  font-weight: 700;
+  color: rgb(23, 34, 83);
+}
+
+.plan-summary p:last-child {
+  font-weight: 500;
+  color: rgba(128, 128, 128, 0.5);
+  font-size: medium;
+}
+
+.plan-target-progress {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: -15px;
+}
+
+.plan-progress {
+  margin-top: -20px;
+}
+
+progress {
+  width: 100%;
+  accent-color: rgb(23, 34, 83);
+}
+
+.more {
+  font-size: 25px;
+  color: gray;
+  margin-top: 2px;
 }

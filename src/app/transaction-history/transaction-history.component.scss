@@ -1,0 +1,104 @@
+.transaction-history {
+  padding: 15px;
+  border-radius: 15px;
+  margin: 5px 15px 5px 5px;
+  background-color: white;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.up-down {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3px;
+  margin-left: 5px;
+  font-size: 8px;
+}
+
+.table-header {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+}
+
+.tr-header {
+  background-color: rgba(128, 128, 128, 0.144);
+  color: rgba(128, 128, 128, 0.701);
+}
+
+th {
+  margin: 55px;
+  outline: 1px solid rgba(128, 128, 128, 0.144);
+}
+th p {
+  margin-left: 5px;
+}
+table {
+  width: 100%;
+}
+
+td {
+  text-align: start;
+}
+
+.actions {
+  text-align: center;
+  font-size: 25px;
+  color: rgb(23, 34, 83);
+}
+
+.transaction-date,
+.transaction-name,
+.transaction-amount {
+  color: rgb(23, 34, 83);
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.transaction-time,
+.transaction-type {
+  color: rgba(128, 128, 128, 0.618);
+  font-weight: 400;
+}
+
+.green {
+  color: rgb(111, 227, 111);
+  background-color: rgba(180, 233, 180, 0.119);
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 700;
+}
+.red {
+  color: rgb(231, 131, 131);
+  background-color: rgba(201, 141, 141, 0.101);
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+}
+.yellow {
+  color: rgb(200, 215, 131);
+  background-color: rgba(222, 222, 166, 0.164);
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.action {
+  padding: 5px 15px;
+  border: 1px solid rgba(128, 128, 128, 0.24);
+  border-radius: 5px;
+  margin-left: 10px;
+}
