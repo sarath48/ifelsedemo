@@ -23,9 +23,13 @@
         <app-static-column></app-static-column>
       </div>
       <div class="card-graph">
-        <app-card-balance></app-card-balance>
-        <app-cards-graph></app-cards-graph>
-        <app-transaction-history></app-transaction-history>
+        <app-card-balance [balance]="apiResponse?.balance"></app-card-balance>
+        <app-cards-graph
+          [moneyStatics]="apiResponse?.moneyStatistics"
+        ></app-cards-graph>
+        <app-transaction-history
+          [transaction_history]="apiResponse?.transactions"
+        ></app-transaction-history>
       </div>
     </div>
   </div>

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { FetchBalanceService } from '../fetch-balance.service';
 import { CommonModule } from '@angular/common';
 
@@ -10,10 +10,10 @@ import { CommonModule } from '@angular/common';
   styleUrl: './card-balance.component.scss',
 })
 export class CardBalanceComponent {
-  balance: any;
-  constructor(private fetchService: FetchBalanceService) {
-    this.fetchService
-      .fetchAllDetails()
-      .subscribe((data: any) => (this.balance = data.balance));
+  @Input() balance!: any;
+  constructor() {
+    //   this.fetchService
+    //     .fetchAllDetails()
+    //     .subscribe((data: any) => (this.balance = data.balance));
   }
 }

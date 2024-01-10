@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { FetchBalanceService } from '../fetch-balance.service';
 import { CommonModule } from '@angular/common';
 import Chart from 'chart.js/auto';
@@ -11,19 +11,18 @@ import Chart from 'chart.js/auto';
   styleUrl: './cards-graph.component.scss',
 })
 export class CardsGraphComponent implements OnInit {
-  moneyStatics: any[] = [];
+  @Input() moneyStatics: any[] = [];
   chart!: any;
 
   constructor(private fetchService: FetchBalanceService) {}
 
   ngOnInit(): void {
-    this.fetchService.fetchAllDetails().subscribe((data: any) => {
-      for (let key in data.money_statistics) {
-        if (data.money_statistics.hasOwnProperty(key)) {
-          this.moneyStatics.push({ key, ...data.money_statistics[key] });
-        }
-      }
-    });
+    // this.fetchService.fetchAllDetails().subscribe((data: any) => {
+    // for (let key in this.moneyStatics) {
+    //   if (this.moneyStatics.hasOwnProperty(key)) {
+    //     this.moneyStatics.push({ key, ...this.moneyStatics[key] });
+    //   }
+    // }
 
     this.createChart();
   }

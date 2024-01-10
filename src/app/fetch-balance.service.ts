@@ -7,7 +7,7 @@ import { shareReplay } from 'rxjs';
 })
 export class FetchBalanceService {
   constructor(private http: HttpClient) {}
-
+  apiResponse!: any;
   fetchAllDetails() {
     return this.http.get('https://1.api.fy23ey06.careers.ifelsecloud.com/');
   }
